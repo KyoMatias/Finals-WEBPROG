@@ -1,11 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const loginForm = document.getElementById("login-form");
-    const hiddenContent = document.getElementById("hidden-content");
-    const loginButton = document.getElementById("login-button");
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("myForm");
+    const animateButton = document.getElementById("animateButton");
 
-    loginButton.addEventListener("click", function (e) {
-        e.preventDefault();
-        loginForm.style.transform = "translateY(-100%)";
-        hiddenContent.style.display = "block";
+    animateButton.addEventListener("click", function() {
+        form.classList.add("animated");
+
+        // Remove the animation class after the animation is complete
+        form.addEventListener("animationend", function() {
+            form.classList.remove("animated");
+        }, { once: true });
     });
 });

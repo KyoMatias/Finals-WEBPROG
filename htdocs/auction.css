@@ -1,0 +1,128 @@
+.auction-container {
+    display: flex;
+    position: relative;
+  }
+  .auction-auction {
+    padding-top: 1%;
+    width: 100%;
+    height: 739px;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+  }
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 1920vh; /* Adjust the height as needed */
+    overflow: hidden;
+}
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding-top: 3%;
+  z-index: -1;
+}
+  .auction-heading {
+    color: rgba(216, 19, 19, 0.75);
+    margin-top: 0;
+    margin-bottom: auto;
+    width: 696px;
+    height: 38px;
+    text-align: center;
+    font-family: 'Martian Mono', monospace;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .auction-gallery-card {
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .auction-container1 {
+    width: auto;
+    display:contents;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: auto;
+  }
+  .auction-image {
+    padding-top: 10%;
+    padding-left: 20%;
+    padding-right: 28%;
+    padding-bottom: 15%;
+    height: 99vh;
+    width: 2000px;
+    position:absolute;
+    object-fit:contain;
+    display: none;
+  }
+  .auction-ul {
+    width: 94px;
+  }
+  .auction-form {
+    width: 1185px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eac9fd;
+    z-index: 1;
+  }
+  .auction-container2 {
+    flex: 0 0 auto;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .auction-container3 {
+    width: 32px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    padding-top: var(--dl-space-space-oneandhalfunits);
+    padding-left: var(--dl-space-space-unit);
+    flex-direction: column;
+    padding-bottom: 20px;
+    justify-content: center;
+  }
+  .auction-button {
+    width: 94px;
+    height: 33px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .footer-footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    max-width: auto;
+    align-items: center;
+    padding-top:0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 0%;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 2;
+    
+  }
+  .footer-image {
+    height:4rem;
+    object-fit: cover;
+  }
