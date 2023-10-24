@@ -1,15 +1,22 @@
+body {
+  max-height: 1080px;
+}
+
 .header-header {
     width: 100%;
     display: flex;
     position: relative;
-    max-width: var(--dl-size-size-maxwidth);
+    max-width: 100%;
     align-items: center;
-    padding-top: var(--dl-space-space-twounits);
-    padding-left: var(--dl-space-space-threeunits);
-    padding-right: var(--dl-space-space-threeunits);
-    padding-bottom: var(--dl-space-space-twounits);
+    padding-top: auto;
+    padding-left:auto;
+    padding-right:auto;
+    padding-bottom:auto;
     justify-content: space-between;
     background-color: #000000;
+    z-index: 2;
+    height: 8vh;
+    
   }
   .header-container {
     flex: 0 0 auto;
@@ -19,7 +26,8 @@
   }
   .header-image {
 
-    height: 6vh;
+    padding-left: 1px;
+    height: 9vh;
   }
   .header-container1 {
     flex: 0 0 auto;
@@ -64,7 +72,7 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  @media(max-width: 767px) {
+  @media(max-width: 720px) {
     .header-header {
       padding-left: var(--dl-space-space-twounits);
       padding-right: var(--dl-space-space-twounits);
@@ -76,20 +84,60 @@
       display: none;
     }
   }
-  @media(max-width: 479px) {
+  @media(max-width: 270px) {
     .header-header {
       padding: var(--dl-space-space-unit);
     }
   }
   
   video {
-    padding-top: 8%;
+    padding-top: 0%;
     padding-left: 0%;
-    padding-bottom: 5vh;
+    padding-bottom: 0%;
     left: auto;
     width: 100%;
-    height: 100%;
+    height: 100% ;
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -3;
+  }
+  .footer-footer {
+    z-index: -1;
+    height: 20%
+  }
+
+  .auction-auction {
+    height: 1vh;
+  }
+  .auction-container1  {
+    height: 1920px;
+    width: 1080px !important;
+  }
+  #nftname {
+    height: auto;
+    width: auto;
+  }
+  
+  .aution-gallery-card {
+    width: 1280px !important;
+    height: 720px !important;
+    padding-left: auto;
+    padding-top: auto;
+    padding-right: auto;
+    padding-bottom: auto;
+  }
+  .GalleryFrame {
+  height: auto;
+  width: auto;
+  }
+
+  .video-container {
+    height: 411px !important;
+    z-index: -3;
+    padding-top: 0px;
+  }
+  .Timer {
+    width: 80%;
+    justify-content: center;
   }

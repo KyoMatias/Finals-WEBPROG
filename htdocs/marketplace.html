@@ -33,7 +33,7 @@
     </header>
   </div>
   
-  <div>
+  <div class = "GalleryFrame">
     <link href="./auction.css" rel="stylesheet" />
     <div class="auction-container">
       <form id="liveauctionform" name="LA" class="auction-auction">
@@ -41,22 +41,18 @@
           <span>LIVE AUCTION NOW!!</span>
         </h1>
         <div id="livegallery" class="auction-gallery-card">
-          <div class="video-container">
-            <video autoplay muted loop id="background-video">
-                <source src="Assets/bgvid.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div id="nftcontainer" class="auction-container1">
+          <div id="nftcontainer" class="auction-container1">
             <h2 id="nfttitle"><span>Title</span></h2>
             <span id="nftartist"><span>Artist</span></span>
             <img
             alt="image"
             src="Assets/euroxnew.png"
             id="nftname"
-              class="auction-image"
-            />
+            class="auction-image"/>
           </div>
         </div>
+      </div>
+      <div class ="Timer">
         <h1><span>00:00:00</span></h1>
         <br>
         <span><span>Bidders:</span></span>
@@ -77,11 +73,11 @@
         <form name="bidform" class="auction-form">
           <h1><span>Amount: </span></h1>
           <input
-            type="text"
-            placeholder="bid"
-            enctype="bid"
-            required
-            class="input"
+          type="text"
+          placeholder="bid"
+          enctype="bid"
+          required
+          class="input"
           />
           <div class="auction-container2">
             <div class="auction-container3"></div>
@@ -91,15 +87,21 @@
           </button>
         </form>
       </form>
-    </div>
+      </div>
+  </div>
+  
+  <div class="video-container">
+    <video autoplay muted loop id="background-video">
+        <source src="Assets/bgvid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
   </div>
 
-  
-  <footer class="footer-footer footer-root-class-name">
+  <footer class="footer-footer">
     <img
-      alt="logo"
-      src="Assets/LOGOFULL.png"
-      class="footer-image"
+    alt="logo"
+    src="Assets/LOGOFULL.png"
+    class="footer-image"
     />
     <span class="footer-text">
       <span>© 2023 EUROX NFT LTD. All Rights Reserved.</span>
