@@ -12,15 +12,18 @@
   }
   
   .home-banner {
-    width: 1920px;
-    height: auto ;
+    width: 100%;
+    height: 500px;
     display: flex;
     align-items: center;
     padding-top: 99px;
+    padding-left: var(--dl-space-space-threeunits);
+    padding-right: var(--dl-space-space-threeunits);
     flex-direction: column;
     padding-bottom: 153px;
+    background-size: auto;
     justify-content: space-between;
-    background-image:  url('../Assets/euroxnew.png');
+    background-image:  url('Assets/euroxnew.png');
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -40,27 +43,6 @@
     
 
   }
-
-  .IntroMsg {
-    font-family: 'Rubik', sans-serif;
-    color: #bd64f0;
-    justify-content: left;
-    font-size: 40px;
-  }
-
-  .WelcomeMsg {
-    font-family: 'Kanit', sans-serif;
-    color: #f0e8f5;
-    justify-content: center !important;
-    font-size: 20px;
-
-  }
-
-  .poweredmsg {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 200;
-    justify-items: right !important;
-  }
   .GSbtn:hover {
     background-position: 99% 0;
     transition: all .4s ease-in-out;
@@ -76,17 +58,12 @@
     margin-bottom: var(--dl-space-space-twounits);
     letter-spacing: 2px;
     text-transform: uppercase;
-    text-shadow: rgba(255,255,255,1) 0px 0px 15px;
   }
   .home-text1 {
     font-size: 6rem;
     text-align: center;
-    text-shadow: 3px 1px 2px rgba(90, 179, 182, 0.51);
-    text-shadow: rgba(212, 0, 255, 0.90) 0px 0px 50px;
     margin-bottom: var(--dl-space-space-unit);
-    background: -webkit-linear-gradient(90deg, rgba(73,53,87,1) 0%, rgba(95,182,182,1) 5%, rgba(38,228,255,1) 10%, rgba(255,0,245,1) 50%, rgba(128,0,255,1) 90%, rgba(202,100,227,1) 95%, rgba(98,61,119,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: rgb(255, 255, 255);
   }
   .home-container1 {
     flex: 0 0 auto;
@@ -96,11 +73,10 @@
     align-items: center;
     flex-direction: row;
     justify-content: center;
-    padding-bottom: 2%;
-    padding-top: 2%;
+    background-color: b;
   }
 
-  @media(max-width: 1920px) {
+  @media(max-width: 767px) {
     .home-banner {
       padding-left: var(--dl-space-space-twounits);
       padding-right: var(--dl-space-space-twounits);
@@ -124,6 +100,7 @@
   }
   .footer-footer {
     width: 100%;
+    height: 100% !important;
     display: flex;
     position: relative;
     max-width: var(--dl-size-size-maxwidth);
@@ -139,8 +116,4 @@
   .footer-image {
     height: 5rem;
     object-fit: cover;
-  }
-
-  .welcomeimg {
-    width: 40%;
   }
