@@ -22,14 +22,36 @@
     justify-content: space-between;
     background-image:  url('../Assets/euroxnew.png');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
+    background-attachment: fixed;
   }
+    .IntroMsg {
+      font-family: 'Rubik', sans-serif;
+      color: #bd64f0;
+      justify-content: left;
+      font-size: 40px;
+    }
+    
+    .WelcomeMsg {
+      font-family: 'Kanit', sans-serif;
+      color: #f0e8f5;
+      justify-content: center !important;
+      font-size: 20px;
+      
+    }
+    
+    .poweredmsg {
+      font-family: 'Rubik', sans-serif;
+      font-weight: 200;
+      justify-items: right !important;
+    }
+  
   .GSbtn {
-    color: rgb(221, 162, 255);
+    color: rgb(229, 183, 255);
     padding: 20px 48px;
     border-radius: 20px;
     border: none;
-    font-size: 25px;
+    font-size: 30px;
     cursor: pointer;
     transition: 0.5s;
     overflow: hidden;
@@ -37,36 +59,19 @@
     font-family: 'Martian Mono', monospace;
     text-transform: uppercase;
     font-weight: bold;
+    background-color: #0000004a;
+
+    
+    
     
 
   }
-
-  .IntroMsg {
-    font-family: 'Rubik', sans-serif;
-    color: #bd64f0;
-    justify-content: left;
-    font-size: 40px;
-  }
-
-  .WelcomeMsg {
-    font-family: 'Kanit', sans-serif;
-    color: #f0e8f5;
-    justify-content: center !important;
-    font-size: 20px;
-
-  }
-
-  .poweredmsg {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 200;
-    justify-items: right !important;
-  }
-  .GSbtn:hover {
+    .GSbtn:hover {
     background-position: 99% 0;
-    transition: all .4s ease-in-out;
-    background-image: linear-gradient(to right, #ffffff, #f0e8f5, #390280ab, #c696e6, #bd64f0);
+    transition: all .7s ease-in-out;
+    background-image: linear-gradient(to right, #000000, #1f062f, #471f7bab, #c696e6, #bd64f0);
     box-shadow: 0 4px 15px 0 rgba(199, 150, 255, 0.75);
-    color: white;
+    color: rgb(255, 255, 255);
     text-shadow: 3px 3px 3px rgba(55, 0, 87, 0.452),0 0 10px #fff;
   }  
   .home-text {
